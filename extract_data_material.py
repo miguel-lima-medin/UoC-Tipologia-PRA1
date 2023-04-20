@@ -2,16 +2,17 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-def scrape_data(url_to_process):
+def scrape_data(url_to_process, verbose=False):
 
     page = requests.get(url_to_process)
 
     soup = BeautifulSoup(page.content, features="html.parser")
-
-    # print(soup.prettify())
+    if verbose:
+        print(soup.prettify())
 
     title = soup.title.string
-    print(title)
+    if verbose:
+        print(title)
 
     table = soup.find(class_ = 'tblData')
     rows = table.find_all('tr')
@@ -41,6 +42,7 @@ def scrape_data(url_to_process):
     df = pd.DataFrame(datos)
 
     # # Convierte los tipos de datos adecuados para las columnas Price y Change
+    # TODO: esto sigue pendiente
     # df['Price'] = pd.to_numeric(df['Price'])
     # df['Change'] = df['Change'].str.rstrip('%').astype('float') / 100
 
