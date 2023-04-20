@@ -1,0 +1,9 @@
+aluminum
+copper
+gold
+iron-ore
+lead
+nickel
+silver
+tin
+zinc
