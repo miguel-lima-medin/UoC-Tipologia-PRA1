@@ -8,7 +8,8 @@ Miguel Martínez Ruíz y Miguel Lima Medín
 
 ## Librerías a instalar
 pip install lxml
-pendiente de completar esta lista
+pip install python-dateutil 
+pip install argparse
 
 ## Ejecutar el web scrapper
 Se ejecuta llamando **main.py**

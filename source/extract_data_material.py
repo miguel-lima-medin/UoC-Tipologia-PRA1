@@ -41,9 +41,4 @@ def scrape_data(url_to_process, verbose=False):
     # Crea el DataFrame de pandas a partir de la lista de datos
     df = pd.DataFrame(datos)
 
-    # # Convierte los tipos de datos adecuados para las columnas Price y Change
-    # TODO: esto sigue pendiente
-    # df['Price'] = pd.to_numeric(df['Price'])
-    # df['Change'] = df['Change'].str.rstrip('%').astype('float') / 100
-
     return df
