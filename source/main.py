@@ -6,7 +6,6 @@ import traceback
 import random
 import argparse
 import os
-# TODO: meter instalaciones en README.me
 
 from extract_data_material import scrape_data
 from read_available_commodities import read_commodities_from_sitemap, read_commodities_from_menu

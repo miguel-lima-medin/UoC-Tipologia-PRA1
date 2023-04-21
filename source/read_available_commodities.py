@@ -1,9 +1,15 @@
 import requests
 from bs4 import BeautifulSoup
+
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                  'Chrome/89.0.4389.82 Safari/537.36 OPR/75.0.3969.14'
+}
+
 def read_commodities_from_sitemap():
     # Descargar sitemap.xml
     sitemap_url = "https://www.indexmundi.com/sitemap.xml"
-    sitemap = requests.get(sitemap_url).text
+    sitemap = requests.get(sitemap_url, headers=headers).text
 
     # Encontrar URLs con "commodities/?commodity="
     # TODO: Idealmente debería ser "xml", pero no me funcionó. Con html lo lee, pero es una ñapa
@@ -24,7 +30,7 @@ def read_commodities_from_menu():
 
     url = "https://www.indexmundi.com/commodities/?"
 
-    page = requests.get(url)
+    page = requests.get(url, headers=headers)
     soup = BeautifulSoup(page.content, features="html.parser")
 
     # Creamos una lista de commodities vacía y guardamos los enlaces que contengan la etiqueta a

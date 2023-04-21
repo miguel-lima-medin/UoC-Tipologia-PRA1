@@ -2,9 +2,14 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                  'Chrome/89.0.4389.82 Safari/537.36 OPR/75.0.3969.14'
+}
+
 def scrape_data(url_to_process, verbose=False):
 
-    page = requests.get(url_to_process)
+    page = requests.get(url_to_process, headers=header)
 
     soup = BeautifulSoup(page.content, features="html.parser")
 
