@@ -19,3 +19,25 @@ def read_commodities_from_sitemap():
             commodities.append(commodity)
 
     return commodities
+
+def read_commodities_from_menu():
+
+    url = "https://www.indexmundi.com/commodities/?"
+
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, features="html.parser")
+
+    # Creamos una lista de commodities vacía y guardamos los enlaces que contengan la etiqueta a
+    # con un atributo href y la cadena "?commodity="
+    commodity_links = []
+    for link in soup.find_all('a'):
+        if link.get('href') and "?commodity=" in link.get('href'):
+            commodity_links.append(link)
+
+    # Iteramos sobre los enlaces para extraer los nombres de las commodities
+    commodities = []
+    for link in commodity_links:
+        commodity_name = link['href'].split("?commodity=")[1]
+        commodities.append(commodity_name)
+
+    return commodities

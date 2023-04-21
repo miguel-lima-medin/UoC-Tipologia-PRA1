@@ -7,12 +7,10 @@ def scrape_data(url_to_process, verbose=False):
     page = requests.get(url_to_process)
 
     soup = BeautifulSoup(page.content, features="html.parser")
-    if verbose:
-        print(soup.prettify())
 
     title = soup.title.string
     if verbose:
-        print(title)
+        print("Vamos a procesar la información del commodity:" + title)
 
     table = soup.find(class_ = 'tblData')
     rows = table.find_all('tr')
