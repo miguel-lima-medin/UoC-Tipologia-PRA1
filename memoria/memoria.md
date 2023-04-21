@@ -63,16 +63,50 @@ Con el web scrapper diseñado se automatizarían todos estos pasos grabando la i
 Se selecciona [Index Mundi](https://www.indexmundi.com) por contener la información que se necesita.
 
 #### Robots.txt
-Se comprueba en su fichero [robots.txt](https://www.indexmundi.com/robots.txt) que en general se permiten los web scrappers, con la salvedad de una serie de robots específicados en su lista negra. Respetaremos su limitación a descargar inormación del área /api/v2. 
+Se comprueba en su fichero [robots.txt](https://www.indexmundi.com/robots.txt) que en general se permiten los web scrappers, con la salvedad de una serie de robots específicados en su lista negra. Respetaremos su limitación a descargar inormación del área /api/v2.
+
 ![img_1.png](img_1.png)
 
 ### Sitemap.xml
+Verificamos el fichero [Sitemap.xml](https://www.indexmundi.com/sitemap.xml)
+
+Identificamos la nomenclatura de las páginas que nos interesa extraer para obtener la información de las commodities:
+
+![img_2.png](img_2.png)
 
 ## Título
+**Histórico de precios de materiales base**
 
 ## Descripción del Dataset
+El Dataset consta de información de precios para varias commodities.
 
-Inserta aquí la descripción del dataset.
+### Commodities extraidas
+Las commodities a extraer son seleccionadas por el usuario o usuaria:
+
+A) Si se indica una lista de commodities deseadas se extraerán exactamente esas commodities
+
+B) Por defecto el programa toma la lista "commodities_list.txt" en la carpeta donde se encuentra main.py
+
+C) También se pueden pedir todas las commodities que el web scrapper encuentre en el menú a través de BeautifulSoup, con la opción --download_from_menu
+
+D) También se pueden pedir todas las commodities que el web scrapper encuentre en sitemap.xml, con la opción --download_from_sitemap
+
+### Estructura de carpetas y ficheros
+Para cada commodity extraida se genera un fichero .csv con el nombre de la commodity y la fecha. Se guardan en la carpeta [./dataset/](https://github.com/miguel-lima-medin/UoC-Tipologia-PRA1/tree/main/dataset)
+
+![img_3.png](img_3.png)
+
+Cada fichero tiene la siguiente estructura:
+
+1) Una primera fila de cabecera con el nombre de las tres columnas Month, Price y Change
+
+2) Una fila para cada registro mensual
+
+![img_4.png](img_4.png)
+
+El formato es el de un texto plano separado por comas:
+
+![img_5.png](img_5.png)
 
 ## Representación Gráfica
 
