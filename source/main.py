@@ -60,15 +60,12 @@ for commodity in commodities_to_process:
         # TODO: probar a generar un Excel con varios tabs.
         # [see issue #4](https://github.com/miguel-lima-medin/UoC-Tipologia-PRA1/issues/4)
         # df.to_excel('Commodities_' + date_today_str + '.xlsx', sheet_name=commodity)
-
-        # TODO: sea Excel o .csv tiene que guardarse en una carpeta separada. Hay que ver en el enunciado de la práctica la nomenclatura esperada
-
         directory = "..//dataset/" + date_today_str + "/"
 
         if not os.path.exists(directory):
             os.makedirs(directory)
 
-        df.to_csv(directory + commodity + '_' + date_today_str + '.csv')
+        df.to_csv(directory + commodity + '.csv')
     except Exception as e:
         timestamp = datetime.now().strftime("%H:%M:%S")
         traceback.print_exc()

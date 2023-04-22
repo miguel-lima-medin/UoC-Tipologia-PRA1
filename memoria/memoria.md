@@ -12,7 +12,7 @@ lang: es-ES
 ### Aula 1
 ### Miguel Martínez Ruíz y Miguel Lima Medín
 
-\newpage
+***
 
 # Índice de Contenidos
 
@@ -28,7 +28,7 @@ lang: es-ES
 - [Dataset](#dataset)
 - [Vídeo](#vídeo)
 
-\newpage
+****
 
 ## Contexto
 ### Recargos de metales 
@@ -63,7 +63,7 @@ Con el web scrapper diseñado se automatizarían todos estos pasos grabando la i
 Se selecciona [Index Mundi](https://www.indexmundi.com) por contener la información que se necesita.
 
 #### Robots.txt
-Se comprueba en su fichero [robots.txt](https://www.indexmundi.com/robots.txt) que en general se permiten los web scrappers, con la salvedad de una serie de robots específicados en su lista negra. Respetaremos su limitación a descargar inormación del área /api/v2.
+Se comprueba en su fichero [robots.txt](https://www.indexmundi.com/robots.txt) que en general se permiten los web scrappers, con la salvedad de una serie de robots específicados en su lista negra. Respetaremos la limitación indicada, no accediendo al área /api/v2.
 
 ![img_1.png](img_1.png)
 
@@ -92,9 +92,7 @@ C) También se pueden pedir todas las commodities que el web scrapper encuentre 
 D) También se pueden pedir todas las commodities que el web scrapper encuentre en sitemap.xml, con la opción --download_from_sitemap
 
 ### Estructura de carpetas y ficheros
-Para cada commodity extraida se genera un fichero .csv con el nombre de la commodity y la fecha. Se guardan en la carpeta [./dataset/](https://github.com/miguel-lima-medin/UoC-Tipologia-PRA1/tree/main/dataset)
-
-![img_3.png](img_3.png)
+Existe una carpeta para cada día en el que se ha ejecutado el script, en [../dataset/](https://github.com/miguel-lima-medin/UoC-Tipologia-PRA1/tree/main/dataset). Dentro de esa carpeta existe un fichero .csv para cada commodity.
 
 Cada fichero tiene la siguiente estructura:
 
@@ -115,7 +113,7 @@ El formato es el de un texto plano separado por comas:
 En la imagen podemos ver la estructura de la página web elegida.  
 En el cuadro rojo se pueden observar los índices.  
 Dentro de estos (cuadro azul) se encuentran  los subíndices con los que accedemos 
-a las páginas que contienen los datos de las de las commodities.  
+a las páginas que contienen los datos de las commodities.  
 Al acceder a uno de estos, en la página contamos con la tabla (cuadro verde)
 de la que extraemos la información que guardamos en el dataset.
 De esta forma, nuestro dataset contará con un archivo CSV con los datos de esta 
@@ -125,13 +123,27 @@ nuestro programa.
 
 ## Contenido
 
-En nuestro dataset incluimos en cada archivo, los datos del precio del commodity 
+En nuestro dataset incluimos en cada archivo, los datos del precio de la commodity 
 para cada mes en un periodo de seis meses, así como el cambio porcentual del precio
 respecto al mes anterior.
 
 ## Propietario
 
-Inserta aquí la información del propietario.
+[IndexMundi](https://www.indexmundi.com/about.html) es un portal de datos que recopila hechos y estadísticas de múltiples fuentes.
+
+Buscamos en Zenodo contenido sobre precios de metales. Restringimos la busqueda a nuestro dominio:
+
+![img_12.png](img_12.png)
+
+Se revisan los títulos y descripción de los 51 resultados, pero ninguno encaja con lo que se pretende.
+
+Buscando datasets abiertos de "_commodities prices_" resultan 275 entradas. Revisadas todas, solo se identifican dos análisis similares a nuestro ejercicio:
+
+| Dataset Candidato                                                                            | Análisis                                                                                                                                                                                                                               |
+|----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Evolució del preu de les matèries primeres](https://zenodo.org/record/7336214#.ZEQxas5ByUk) | Toma tambien los datos de IndexMundi<br/>Contiene información sobre todo tipo de materias primas, pero no está actualizado<br/>En nuestro caso no necesitamos extraer algunos de los campos que se escogieron en este análisis previo. |
+| [Practica 1 Web Scraping Oil Price Data](https://zenodo.org/record/5655519#.ZEQxd85ByUk)     | Solo incluye el precio de petroleo                                                                                                                                                                                                     |
+
 
 ## Inspiración
 
@@ -143,17 +155,50 @@ Inserta aquí información sobre la licencia del dataset.
 
 ## Código
 
+### Módulos
+
 En nuestra estructura de código, hemos separado las funcionalidades del 
 software en tres archivos diferentes:
-- main.py: archivo principal, que contiene la configuración de los argumentos con los que podemos ejecutar la función principal.  
+- **main.py**: archivo principal, que contiene la configuración de los argumentos con los que podemos ejecutar la función principal.  
 Dependiendo de estos parámetros, realizaremos el proceso de web scraping, a partir del sitemap, 
 del índice del sitio web, o de una lista de commodities incluidas en un archivo de texto.
 De cara a evitar posibles bloqueos de IP, realizaremos un retardo aleatorio entre cada petición al sitio web.
-- extract_data_material.py: contiene la función a la que llamamos desde el archivo main, que realiza propiamente el proceso de 
+- **read_available_commodities**: en este archivo definimos las dos funciones que se pueden ejecutar a través de los argumentos 
+que le pasamos a la función main.py (obtener la lista de commodities a procesar desde el sitemap o bien desde el menú del índice).
+- **extract_data_material.py**: contiene la función a la que llamamos desde el archivo main, que realiza propiamente el proceso de 
 web scraping. En concreto, busca la tabla que contiene los datos de la commodity, y los devuelve en formato dataframe.
-- read_available_commodities: en este archivo definimos las dos funciones que se pueden ejecutar a través de los argumentos 
-que le pasamos a la función main.py (leer desde el sitemap o bien leer desde el menú del índice).
-- 
+
+### Dificultades enfrentadas
+
+El sitemap.xml no estaba actualizado, así que creamos una segunda función que descubre las páginas enlazadas en el site.
+
+Algunas páginas no contenían la tabla de información, así que se habilitó la gestión de errores para capturar ese fallo en el fichero de log  y que el código continúe su ejecución.
+
+### Estructura logs
+En la carpeta ../logs/ se guarda un fichero log para cada día. Multiples ejecuciones en un mismo día añaden líneas al fichero ya existente.
+
+Se registra en el log tanto las páginas procesadas correctamente
+![img_9.png](img_9.png)
+
+como aquellas en las que se ha producido algún error
+![img_10.png](img_10.png)
+
+### Consideraciones código
+
+| Indicación                                                         | Aplicación                                                                                                                                                                                |
+|--------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Descubrimiento de enlaces y navegación autónoma                    | Creadas dos funciones de navegación autónoma para obtener el listado de URLs a procesar:<br/>1) Explorando el contenido de sitemap.xml<br/>2) Navegando el menú lateral con BeautifulSoup |
+| Mecanismos que permitan ejecutar un uso apropiado del web scraping | Parada de un tiempo aleatorio entre 1 y 3 segundos entre cada página a procesar<br/>![img_8.png](img_8.png)                                                                               |
+| User-Agent                                                         | ![img_7.png](img_7.png)                                                                                                                                                                   |
+| APIs                                                               | No se utilizan                                                                                                                                                                            |
+| Modularidad                                                        | Fichero main. Dos ficheros .py adicionals con 2 y 1 funciones.                                                                                                                            |
+
+### Consideraciones página web 
+| Indicación     | Aplicación |
+|----------------|----------|
+| Idioma         | Inglés   |
+| [x] Sitio real |          |
+
 ## Dataset
 
 Inserta aquí la descripción del dataset utilizado en la práctica.
@@ -161,3 +206,21 @@ Inserta aquí la descripción del dataset utilizado en la práctica.
 ## Vídeo
 
 Inserta aquí el enlace al vídeo de presentación de la práctica.
+
+### Bibliografía utilizada
+● Subirats, L., Calvo, M. (2018). Web Scraping. Editorial UOC.
+● Masip, D. (2019). El lenguaje Python. Editorial UOC.
+● Lawson, R. (2015). Web Scraping with Python. Packt Publishing Ltd. Chapter 2.
+Scraping the Data.
+● Tutorial de GitHub https://guides.github.com/activities/hello-world.
+- Herramienta Learn de PyCharm
+
+### Tabla de firmas
+Ambos hemos contribuido en cada uno de los apartados.
+
+| Contribuciones | Firma Martínez | Firma Lima |
+|------|----------------|------------|
+| Investigación previa     | mmr              | mlm        |
+| Redacción de las respuestas     | mmr               | mlm        |
+| Desarrollo del código      | mmr               | mlm        |
+| Participación en el vídeo     | mmr               | mlm        |
