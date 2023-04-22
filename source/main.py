@@ -62,7 +62,13 @@ for commodity in commodities_to_process:
         # df.to_excel('Commodities_' + date_today_str + '.xlsx', sheet_name=commodity)
 
         # TODO: sea Excel o .csv tiene que guardarse en una carpeta separada. Hay que ver en el enunciado de la práctica la nomenclatura esperada
-        df.to_csv("../dataset/" + commodity + '_' + date_today_str + '.csv')
+
+        directory = "..//dataset/" + date_today_str + "/"
+
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+
+        df.to_csv(directory + commodity + '_' + date_today_str + '.csv')
     except Exception as e:
         timestamp = datetime.now().strftime("%H:%M:%S")
         traceback.print_exc()

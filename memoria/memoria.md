@@ -110,11 +110,24 @@ El formato es el de un texto plano separado por comas:
 
 ## Representación Gráfica
 
-Inserta aquí la representación gráfica.
+![img_6.png](img_6.png)
+
+En la imagen podemos ver la estructura de la página web elegida.  
+En el cuadro rojo se pueden observar los índices.  
+Dentro de estos (cuadro azul) se encuentran  los subíndices con los que accedemos 
+a las páginas que contienen los datos de las de las commodities.  
+Al acceder a uno de estos, en la página contamos con la tabla (cuadro verde)
+de la que extraemos la información que guardamos en el dataset.
+De esta forma, nuestro dataset contará con un archivo CSV con los datos de esta 
+tabla para cada commodity. Si no hubiera tabla, registramos un log con este hecho.
+Estos datos se guardan en una carpeta correspondiente a la fecha de ejecución de 
+nuestro programa.
 
 ## Contenido
 
-Inserta aquí el contenido.
+En nuestro dataset incluimos en cada archivo, los datos del precio del commodity 
+para cada mes en un periodo de seis meses, así como el cambio porcentual del precio
+respecto al mes anterior.
 
 ## Propietario
 
@@ -130,8 +143,17 @@ Inserta aquí información sobre la licencia del dataset.
 
 ## Código
 
-Inserta aquí el código utilizado en la práctica.
-
+En nuestra estructura de código, hemos separado las funcionalidades del 
+software en tres archivos diferentes:
+- main.py: archivo principal, que contiene la configuración de los argumentos con los que podemos ejecutar la función principal.  
+Dependiendo de estos parámetros, realizaremos el proceso de web scraping, a partir del sitemap, 
+del índice del sitio web, o de una lista de commodities incluidas en un archivo de texto.
+De cara a evitar posibles bloqueos de IP, realizaremos un retardo aleatorio entre cada petición al sitio web.
+- extract_data_material.py: contiene la función a la que llamamos desde el archivo main, que realiza propiamente el proceso de 
+web scraping. En concreto, busca la tabla que contiene los datos de la commodity, y los devuelve en formato dataframe.
+- read_available_commodities: en este archivo definimos las dos funciones que se pueden ejecutar a través de los argumentos 
+que le pasamos a la función main.py (leer desde el sitemap o bien leer desde el menú del índice).
+- 
 ## Dataset
 
 Inserta aquí la descripción del dataset utilizado en la práctica.

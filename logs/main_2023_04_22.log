@@ -1,0 +1,525 @@
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=agricultural-raw-materials-price-index HTTP/1.1" 200 48661
+ERROR:root:19:53:04 Error scraping data for agricultural-raw-materials-price-index: Cannot save file into a non-existent directory: '..\dataset\2023_04_22'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=beverage-price-index HTTP/1.1" 200 48314
+ERROR:root:19:53:07 Error scraping data for beverage-price-index: Cannot save file into a non-existent directory: '..\dataset\2023_04_22'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=commodity-price-index HTTP/1.1" 200 47958
+ERROR:root:19:53:10 Error scraping data for commodity-price-index: Cannot save file into a non-existent directory: '..\dataset\2023_04_22'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=energy-price-index HTTP/1.1" 200 48322
+ERROR:root:19:53:13 Error scraping data for energy-price-index: Cannot save file into a non-existent directory: '..\dataset\2023_04_22'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=food-and-beverage-price-index HTTP/1.1" 200 48156
+ERROR:root:19:53:17 Error scraping data for food-and-beverage-price-index: Cannot save file into a non-existent directory: '..\dataset\2023_04_22'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=agricultural-raw-materials-price-index HTTP/1.1" 200 48661
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=beverage-price-index HTTP/1.1" 200 48314
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=commodity-price-index HTTP/1.1" 200 47958
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=energy-price-index HTTP/1.1" 200 48322
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=food-and-beverage-price-index HTTP/1.1" 200 48156
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=food-price-index HTTP/1.1" 200 48293
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=industrial-inputs-price-index HTTP/1.1" 200 48181
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=metals-price-index HTTP/1.1" 200 48331
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=non-fuel-price-index HTTP/1.1" 200 48348
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=petroleum-price-index HTTP/1.1" 200 48081
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=cbot-denatured-fuel-ethanol HTTP/1.1" 200 41432
+ERROR:root:19:57:01 Error scraping data for cbot-denatured-fuel-ethanol: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=central-appalachian-coal HTTP/1.1" 200 42747
+ERROR:root:19:57:03 Error scraping data for central-appalachian-coal: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=coal-australian HTTP/1.1" 200 57492
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=coal-south-african HTTP/1.1" 200 57620
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=colombian-coal HTTP/1.1" 200 53446
+ERROR:root:19:57:14 Error scraping data for colombian-coal: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=crude-oil HTTP/1.1" 200 57066
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=crude-oil-brent HTTP/1.1" 200 57542
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=crude-oil-dubai HTTP/1.1" 200 57333
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=crude-oil-west-texas-intermediate HTTP/1.1" 200 59279
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=diesel HTTP/1.1" 200 56966
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=gasoline HTTP/1.1" 200 56296
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=gulf-coast-sour-crude-oil HTTP/1.1" 200 42764
+ERROR:root:19:57:42 Error scraping data for gulf-coast-sour-crude-oil: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=gulf-coast-ultra-low-sulfur-diesel HTTP/1.1" 200 41488
+ERROR:root:19:57:45 Error scraping data for gulf-coast-ultra-low-sulfur-diesel: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=heating-oil HTTP/1.1" 200 56338
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=indonesian-liquified-natural-gas HTTP/1.1" 200 57588
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=jet-fuel HTTP/1.1" 200 56284
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=natural-gas HTTP/1.1" 200 58490
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=agricultural-raw-materials-price-index HTTP/1.1" 200 48661
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=beverage-price-index HTTP/1.1" 200 48314
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=commodity-price-index HTTP/1.1" 200 47958
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=energy-price-index HTTP/1.1" 200 48322
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=food-and-beverage-price-index HTTP/1.1" 200 48156
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=food-price-index HTTP/1.1" 200 48293
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=industrial-inputs-price-index HTTP/1.1" 200 48181
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=metals-price-index HTTP/1.1" 200 48331
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=non-fuel-price-index HTTP/1.1" 200 48348
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=petroleum-price-index HTTP/1.1" 200 48081
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=cbot-denatured-fuel-ethanol HTTP/1.1" 200 41432
+ERROR:root:19:59:40 Error scraping data for cbot-denatured-fuel-ethanol: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=central-appalachian-coal HTTP/1.1" 200 42747
+ERROR:root:19:59:44 Error scraping data for central-appalachian-coal: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=coal-australian HTTP/1.1" 200 57492
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=coal-south-african HTTP/1.1" 200 57620
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=colombian-coal HTTP/1.1" 200 53446
+ERROR:root:19:59:55 Error scraping data for colombian-coal: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=crude-oil HTTP/1.1" 200 57066
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=crude-oil-brent HTTP/1.1" 200 57542
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=crude-oil-dubai HTTP/1.1" 200 57333
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=crude-oil-west-texas-intermediate HTTP/1.1" 200 59279
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=diesel HTTP/1.1" 200 56966
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=gasoline HTTP/1.1" 200 56296
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=gulf-coast-sour-crude-oil HTTP/1.1" 200 42764
+ERROR:root:20:00:23 Error scraping data for gulf-coast-sour-crude-oil: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=gulf-coast-ultra-low-sulfur-diesel HTTP/1.1" 200 41488
+ERROR:root:20:00:27 Error scraping data for gulf-coast-ultra-low-sulfur-diesel: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=heating-oil HTTP/1.1" 200 56338
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=indonesian-liquified-natural-gas HTTP/1.1" 200 57588
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=jet-fuel HTTP/1.1" 200 56284
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=natural-gas HTTP/1.1" 200 58490
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=new-york-harbor-ethanol HTTP/1.1" 200 41412
+ERROR:root:20:00:47 Error scraping data for new-york-harbor-ethanol: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=propane HTTP/1.1" 200 56229
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=rbob-gasoline HTTP/1.1" 200 57755
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=russian-export-blend-crude-oil HTTP/1.1" 200 41447
+ERROR:root:20:01:00 Error scraping data for russian-export-blend-crude-oil: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=russian-natural-gas HTTP/1.1" 200 57408
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=western-canadian-select-crude-oil HTTP/1.1" 200 42866
+ERROR:root:20:01:09 Error scraping data for western-canadian-select-crude-oil: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=cocoa-beans HTTP/1.1" 200 58232
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=other-mild-arabicas-coffee HTTP/1.1" 200 59114
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=robusta-coffee HTTP/1.1" 200 57494
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=tea HTTP/1.1" 200 56742
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=barley HTTP/1.1" 200 54131
+ERROR:root:20:01:28 Error scraping data for barley: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=canadian-wheat HTTP/1.1" 200 53284
+ERROR:root:20:01:31 Error scraping data for canadian-wheat: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=corn HTTP/1.1" 200 57718
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=oats HTTP/1.1" 200 42631
+ERROR:root:20:01:40 Error scraping data for oats: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=rice HTTP/1.1" 200 56983
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=rough-rice HTTP/1.1" 200 42692
+ERROR:root:20:01:47 Error scraping data for rough-rice: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=soft-red-winter-wheat HTTP/1.1" 200 56995
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=sorghum HTTP/1.1" 200 53201
+ERROR:root:20:01:55 Error scraping data for sorghum: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=wheat HTTP/1.1" 200 56177
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=bananas HTTP/1.1" 200 56865
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=oranges HTTP/1.1" 200 56828
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=beef HTTP/1.1" 200 57203
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=chicken HTTP/1.1" 200 57490
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=lamb HTTP/1.1" 200 56034
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=pork HTTP/1.1" 200 57729
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=fish HTTP/1.1" 200 56663
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=shrimp HTTP/1.1" 200 57111
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=sugar HTTP/1.1" 200 58340
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=sugar-european-import-price HTTP/1.1" 200 57467
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=sugar-us-import-price HTTP/1.1" 200 57224
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=coconut-oil HTTP/1.1" 200 56215
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=fish-meal HTTP/1.1" 200 57083
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=olive-oil HTTP/1.1" 200 56903
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=palm-kernel-oil HTTP/1.1" 200 56287
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=palm-oil HTTP/1.1" 200 58221
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=peanut-oil HTTP/1.1" 200 56174
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=peanuts HTTP/1.1" 200 56432
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=rapeseed-oil HTTP/1.1" 200 56922
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=soybean-crush HTTP/1.1" 200 42691
+ERROR:root:20:03:16 Error scraping data for soybean-crush: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=soybean-meal HTTP/1.1" 200 58396
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=soybean-oil HTTP/1.1" 200 58346
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=soybeans HTTP/1.1" 200 57738
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=sunflower-oil HTTP/1.1" 200 57084
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=coarse-wool HTTP/1.1" 200 56528
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=copra HTTP/1.1" 200 53185
+ERROR:root:20:03:40 Error scraping data for copra: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=cotton HTTP/1.1" 200 58635
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=fine-wool HTTP/1.1" 200 56497
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=hard-logs HTTP/1.1" 200 56235
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=hard-sawn-wood HTTP/1.1" 200 56178
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=hides HTTP/1.1" 200 56441
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=plywood HTTP/1.1" 200 56134
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=random-length-lumber HTTP/1.1" 200 42777
+ERROR:root:20:04:06 Error scraping data for random-length-lumber: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=rubber HTTP/1.1" 200 57539
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=soft-logs HTTP/1.1" 200 55787
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=soft-sawn-wood HTTP/1.1" 200 55888
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=wood-pulp HTTP/1.1" 200 53257
+ERROR:root:20:04:20 Error scraping data for wood-pulp: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=aluminum HTTP/1.1" 200 58158
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=cold-rolled-steel HTTP/1.1" 200 53288
+ERROR:root:20:04:28 Error scraping data for cold-rolled-steel: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=copper HTTP/1.1" 200 58506
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=gold HTTP/1.1" 200 57287
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=hot-rolled-steel HTTP/1.1" 200 53279
+ERROR:root:20:04:40 Error scraping data for hot-rolled-steel: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=iron-ore HTTP/1.1" 200 57052
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=lead HTTP/1.1" 200 58277
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=nickel HTTP/1.1" 200 57074
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=palladium HTTP/1.1" 200 42649
+ERROR:root:20:04:55 Error scraping data for palladium: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=platinum HTTP/1.1" 200 42639
+ERROR:root:20:04:59 Error scraping data for platinum: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=rebar HTTP/1.1" 200 53203
+ERROR:root:20:05:02 Error scraping data for rebar: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=silver HTTP/1.1" 200 57621
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=steel-wire-rod HTTP/1.1" 200 53250
+ERROR:root:20:05:08 Error scraping data for steel-wire-rod: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=tin HTTP/1.1" 200 56980
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=uranium HTTP/1.1" 200 57939
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=us-midwest-domestic-hot-rolled-coil-steel-index HTTP/1.1" 200 42902
+ERROR:root:20:05:18 Error scraping data for us-midwest-domestic-hot-rolled-coil-steel-index: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=zinc HTTP/1.1" 200 58122
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=dap-fertilizer HTTP/1.1" 200 56188
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=potassium-chloride HTTP/1.1" 200 56290
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=rock-phosphate HTTP/1.1" 200 56172
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=triple-superphosphate HTTP/1.1" 200 56400
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=urea HTTP/1.1" 200 56067
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=feeder-cattle HTTP/1.1" 200 42698
+ERROR:root:20:05:41 Error scraping data for feeder-cattle: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=live-cattle HTTP/1.1" 200 42681
+ERROR:root:20:05:45 Error scraping data for live-cattle: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=cash-settled-butter HTTP/1.1" 200 42724
+ERROR:root:20:05:48 Error scraping data for cash-settled-butter: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=cheese HTTP/1.1" 200 42620
+ERROR:root:20:05:52 Error scraping data for cheese: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=class-iii-milk HTTP/1.1" 200 42700
+ERROR:root:20:05:55 Error scraping data for class-iii-milk: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=class-iv-milk HTTP/1.1" 200 42681
+ERROR:root:20:06:00 Error scraping data for class-iv-milk: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=dry-whey HTTP/1.1" 200 42628
+ERROR:root:20:06:03 Error scraping data for dry-whey: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=international-skimmed-milk-powder HTTP/1.1" 200 41462
+ERROR:root:20:06:07 Error scraping data for international-skimmed-milk-powder: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=nonfat-dry-milk HTTP/1.1" 200 42692
+ERROR:root:20:06:10 Error scraping data for nonfat-dry-milk: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=agricultural-raw-materials-price-index HTTP/1.1" 200 48661
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=beverage-price-index HTTP/1.1" 200 48314
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=commodity-price-index HTTP/1.1" 200 47958
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=energy-price-index HTTP/1.1" 200 48322
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=food-and-beverage-price-index HTTP/1.1" 200 48156
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=food-price-index HTTP/1.1" 200 48293
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=industrial-inputs-price-index HTTP/1.1" 200 48181
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=metals-price-index HTTP/1.1" 200 48331
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=non-fuel-price-index HTTP/1.1" 200 48348
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=petroleum-price-index HTTP/1.1" 200 48081
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=coal-australian HTTP/1.1" 200 57492
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=coal-south-african HTTP/1.1" 200 57620
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=crude-oil HTTP/1.1" 200 57066
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=crude-oil-brent HTTP/1.1" 200 57542
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=crude-oil-dubai HTTP/1.1" 200 57333
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=crude-oil-west-texas-intermediate HTTP/1.1" 200 59279
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=diesel HTTP/1.1" 200 56966
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=gasoline HTTP/1.1" 200 56296
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=heating-oil HTTP/1.1" 200 56338
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=indonesian-liquified-natural-gas HTTP/1.1" 200 57588
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=jet-fuel HTTP/1.1" 200 56284
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=natural-gas HTTP/1.1" 200 58490
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=propane HTTP/1.1" 200 56229
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=rbob-gasoline HTTP/1.1" 200 57755
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=russian-natural-gas HTTP/1.1" 200 57408
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=cocoa-beans HTTP/1.1" 200 58232
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=other-mild-arabicas-coffee HTTP/1.1" 200 59114
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=robusta-coffee HTTP/1.1" 200 57494
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=tea HTTP/1.1" 200 56742
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=barley HTTP/1.1" 200 54131
+ERROR:root:20:08:04 Error scraping data for barley: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=canadian-wheat HTTP/1.1" 200 53284
+ERROR:root:20:08:08 Error scraping data for canadian-wheat: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=corn HTTP/1.1" 200 57718
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=rice HTTP/1.1" 200 56983
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=soft-red-winter-wheat HTTP/1.1" 200 56995
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=sorghum HTTP/1.1" 200 53201
+ERROR:root:20:08:23 Error scraping data for sorghum: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=wheat HTTP/1.1" 200 56177
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=bananas HTTP/1.1" 200 56865
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=oranges HTTP/1.1" 200 56828
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=beef HTTP/1.1" 200 57203
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=chicken HTTP/1.1" 200 57490
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=lamb HTTP/1.1" 200 56034
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=pork HTTP/1.1" 200 57729
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=fish HTTP/1.1" 200 56663
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=shrimp HTTP/1.1" 200 57111
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=sugar HTTP/1.1" 200 58340
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=sugar-european-import-price HTTP/1.1" 200 57467
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=sugar-us-import-price HTTP/1.1" 200 57224
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=coconut-oil HTTP/1.1" 200 56215
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=fish-meal HTTP/1.1" 200 57083
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=olive-oil HTTP/1.1" 200 56903
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=palm-kernel-oil HTTP/1.1" 200 56287
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=palm-oil HTTP/1.1" 200 58221
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=peanut-oil HTTP/1.1" 200 56174
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=peanuts HTTP/1.1" 200 56432
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=rapeseed-oil HTTP/1.1" 200 56922
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=soybean-meal HTTP/1.1" 200 58396
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=soybean-oil HTTP/1.1" 200 58346
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=soybeans HTTP/1.1" 200 57738
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=sunflower-oil HTTP/1.1" 200 57084
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=coarse-wool HTTP/1.1" 200 56528
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=copra HTTP/1.1" 200 53185
+ERROR:root:20:09:58 Error scraping data for copra: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=cotton HTTP/1.1" 200 58635
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=fine-wool HTTP/1.1" 200 56497
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=hard-logs HTTP/1.1" 200 56235
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=hard-sawn-wood HTTP/1.1" 200 56178
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=hides HTTP/1.1" 200 56441
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=plywood HTTP/1.1" 200 56134
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=rubber HTTP/1.1" 200 57539
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=soft-logs HTTP/1.1" 200 55787
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=soft-sawn-wood HTTP/1.1" 200 55888
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=wood-pulp HTTP/1.1" 200 53257
+ERROR:root:20:10:33 Error scraping data for wood-pulp: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=aluminum HTTP/1.1" 200 58158
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=cold-rolled-steel HTTP/1.1" 200 53288
+ERROR:root:20:10:42 Error scraping data for cold-rolled-steel: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=copper HTTP/1.1" 200 58506
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=gold HTTP/1.1" 200 57287
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=hot-rolled-steel HTTP/1.1" 200 53279
+ERROR:root:20:10:54 Error scraping data for hot-rolled-steel: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=iron-ore HTTP/1.1" 200 57052
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=lead HTTP/1.1" 200 58277
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=nickel HTTP/1.1" 200 57074
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=rebar HTTP/1.1" 200 53203
+ERROR:root:20:11:08 Error scraping data for rebar: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=silver HTTP/1.1" 200 57621
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=steel-wire-rod HTTP/1.1" 200 53250
+ERROR:root:20:11:15 Error scraping data for steel-wire-rod: 'NoneType' object has no attribute 'find_all'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=tin HTTP/1.1" 200 56980
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=uranium HTTP/1.1" 200 57939
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=zinc HTTP/1.1" 200 58122
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=dap-fertilizer HTTP/1.1" 200 56188
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=potassium-chloride HTTP/1.1" 200 56290
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=rock-phosphate HTTP/1.1" 200 56172
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=triple-superphosphate HTTP/1.1" 200 56400
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.indexmundi.com:443
+DEBUG:urllib3.connectionpool:https://www.indexmundi.com:443 "GET /commodities/?commodity=urea HTTP/1.1" 200 56067
