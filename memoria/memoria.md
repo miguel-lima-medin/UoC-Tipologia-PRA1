@@ -67,7 +67,7 @@ D) También se pueden pedir todas las commodities que el web scrapper encuentre 
 ## Representación Gráfica
 
 ### Diagrama de flujo del proceso
-
+```plantuml
 @startuml
 start
 switch (Selección de commodity)
@@ -83,6 +83,7 @@ endswitch
 :Dataset, Logs;
 end
 @enduml
+```
 
 ### Captura de pantalla de la web
 
@@ -231,7 +232,7 @@ Decidimos utilizar una licencia [Creative Commons](https://creativecommons.org) 
 
 Utilizamos la herramienta de selección de licencias de su site para escoger la más apropiada: [https://creativecommons.org/choose/](https://creativecommons.org/choose/)
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">licencia de Creative Commons Reconocimiento-NoComercial 4.0 Internacional</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">licencia de Creative Commons Reconocimiento-NoComercial 4.0 Internacional</a>.
 
 <div style="page-break-after: always;"></div>
 
