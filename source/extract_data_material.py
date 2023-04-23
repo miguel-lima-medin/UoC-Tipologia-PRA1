@@ -7,8 +7,8 @@ header = {
                   'Chrome/89.0.4389.82 Safari/537.36 OPR/75.0.3969.14'
 }
 
-def scrape_data(url_to_process, verbose=False):
 
+def scrape_data(url_to_process, verbose=False):
     page = requests.get(url_to_process, headers=header)
 
     soup = BeautifulSoup(page.content, features="html.parser")
@@ -17,7 +17,7 @@ def scrape_data(url_to_process, verbose=False):
     if verbose:
         print("Vamos a procesar la información del commodity:" + title)
 
-    table = soup.find(class_ = 'tblData')
+    table = soup.find(class_='tblData')
     rows = table.find_all('tr')
 
     # Crea una lista vacía para contener los datos de la tabla

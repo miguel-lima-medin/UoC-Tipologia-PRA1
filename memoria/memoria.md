@@ -1,6 +1,6 @@
 ---
-title: UoC-Tipologia-PRA1
-author: Miguel Martínez Ruíz y Miguel Lima Medín
+title: UoC-Tipología-PRA1
+author: Miguel Martínez Ruiz y Miguel Lima Medín
 date: Abril 2023
 lang: es-ES
 ---
@@ -10,14 +10,14 @@ lang: es-ES
 ## Práctica 1: ¿Cómo podemos capturar los datos de la web?
 
 ### Aula 1
-### Miguel Martínez Ruíz y Miguel Lima Medín
+### Miguel Martínez Ruiz y Miguel Lima Medín
 
 <div style="page-break-after: always;"></div>
 
 # Índice de Contenidos
 
 - [Contexto](#contexto)
-- [Título](#título)
+- [Título](#título-del-dataset)
 - [Descripción del Dataset](#descripción-del-dataset)
 - [Representación Gráfica](#representación-gráfica)
 - [Contenido](#contenido)
@@ -91,7 +91,7 @@ end
 
 En la imagen podemos ver la estructura de la página web elegida.  
 En el cuadro rojo se pueden observar los índices.  
-Dentro de estos (cuadro azul) se encuentran  los subíndices con los que accedemos 
+Dentro de estos (cuadro azul) se encuentran los subíndices con los que accedemos 
 a las páginas que contienen los datos de las commodities.  
 Al acceder a uno de estos, en la página contamos con la tabla (cuadro verde)
 de la que extraemos la información que guardamos en el dataset.
@@ -131,7 +131,7 @@ El formato es el de un texto plano separado por comas:
 [IndexMundi](https://www.indexmundi.com/about.html) es un portal de datos que recopila hechos y estadísticas de múltiples fuentes.
 
 ### Investigación de análisis anteriores
-Buscamos en Zenodo contenido sobre precios de metales. Restringimos la busqueda a nuestro dominio:
+Buscamos en Zenodo contenido sobre precios de metales. Restringimos la búsqueda a nuestro dominio:
 
 ![img_12.png](img_12.png)
 
@@ -141,14 +141,14 @@ Buscando datasets abiertos de "_commodities prices_" resultan 275 entradas. Revi
 
 | Dataset Candidato                                                                            | Análisis                                                                                                                                                                                                                               |
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Evolució del preu de les matèries primeres](https://zenodo.org/record/7336214#.ZEQxas5ByUk) | Toma tambien los datos de IndexMundi<br/>Contiene información sobre todo tipo de materias primas, pero no está actualizado<br/>En nuestro caso no necesitamos extraer algunos de los campos que se escogieron en este análisis previo. |
+| [Evolució del preu de les matèries primeres](https://zenodo.org/record/7336214#.ZEQxas5ByUk) | Toma también los datos de IndexMundi<br/>Contiene información sobre todo tipo de materias primas, pero no está actualizado<br/>En nuestro caso no necesitamos extraer algunos de los campos que se escogieron en este análisis previo. |
 | [Practica 1 Web Scraping Oil Price Data](https://zenodo.org/record/5655519#.ZEQxd85ByUk)     | Solo incluye el precio de petroleo                                                                                                                                                                                                     |
 
 ### Principios éticos y legales
 Listamos una serie de principios que se deben considerar antes de proceder con web scrapping, y como los hemos tenido en cuenta en nuestro ejercicio.
 
 #### Obtener permiso y respetar indicaciones del propietario
-Se comprueba en su fichero [robots.txt](https://www.indexmundi.com/robots.txt) que en general se permiten los web scrappers, con la salvedad de una serie de robots específicados en su lista negra. Respetaremos la limitación indicada, no accediendo al área /api/v2.
+Se comprueba en su fichero [robots.txt](https://www.indexmundi.com/robots.txt) que en general se permiten los web scrappers, con la salvedad de una serie de robots especificados en su lista negra. Respetaremos la limitación indicada, no accediendo al área /api/v2.
 
 ![img_1.png](img_1.png)
 
@@ -157,7 +157,7 @@ El sitio web [indexmundi.com](https://www.indexmundi.com/) es el único propieta
 
 En este caso particular, dado que el dataset generado es para uso privado y no se va a comercializar, se podría argumentar que se está respetando el derecho de autor.
 
-Al no contar con su consentimiento explicito, y no ser necesario para nuestro ejercicio, hemos evitado la reproducción o uso de sus logotipos y marcas registradas.
+Al no contar con su consentimiento explícito, y no ser necesario para nuestro ejercicio, hemos evitado la reproducción o uso de sus logotipos y marcas registradas.
 
 ![img_13.png](img_13.png)
 
@@ -167,9 +167,9 @@ Se consultan los términos en [https://www.indexmundi.com/help/terms/](https://w
 | Capítulo                                  | Título en castellano                          | Resumen consideraciones del capítulo                                                                                                                                                                                                                                                                                                     | Aplicación en nuestro ejercicio                                                                                                                                                                                                                                                                                                      |
 |-------------------------------------------|-----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Scope of the Agreement                    | Ámbito del acuerdo                            | Este capítulo indica el alcance del acuerdo de uso, que se aplica a todo usuario/a que acceda al sitio y debe ser asumido antes de empezar a usar el site.                                                                                                                                                                               | Asumimos las condiciones, que se ven en detalle en cada capítulo posterior.                                                                                                                                                                                                                                                          |
-| User guidelines | Pautas del usuario/a                          | Indica pautas de uso como:<br/>- No violar leyes o acuerdos con terceros<br/>- Ser mayor de 18 años<br/>- Pautas específicas para usuarios registrados: no compartir clave, no publicar información falsa, no publicar información en áreas incorrectas, etc.<br/>- No spam ni virus<br/>- No recoger información de usuarios/as         | Cumplimos todas las pautas en nuestro ejercicio.                                                                                                                                                                                                                                                                                     |
+| User guidelines                           | Pautas del usuario/a                          | Indica pautas de uso como:<br/>- No violar leyes o acuerdos con terceros<br/>- Ser mayor de 18 años<br/>- Pautas específicas para usuarios registrados: no compartir clave, no publicar información falsa, no publicar información en áreas incorrectas, etc.<br/>- No spam ni virus<br/>- No recoger información de usuarios/as         | Cumplimos todas las pautas en nuestro ejercicio.                                                                                                                                                                                                                                                                                     |
 | Registered Users                          | Usuarios/as registrados/as                    | Este capítulo se aplica a aquellos usuarios y usuarias que se han registrado en el sitio web. Contiene información sobre la veracidad de la información proporcionada por el usuario o usuaria registrada, la privacidad de los datos y las responsabilidades del usuario/a.                                                             | No nos aplica, porque no somos una empresa registrada como usuario del site que vaya a subir datos. Solo vamos a descargar datos accesibles públicamente a visitantes no registrados.                                                                                                                                                |
-| Posting information on the site | Publicando información en el sitio            | Enumera 13 normas a tener en cuenta a la hora de subir contenido                                                                                                                                                                                                                                                                         | No aplica porque no subiremos contenido                                                                                                                                                                                                                                                                                              |
+| Posting information on the site           | Publicando información en el sitio            | Enumera 13 normas a tener en cuenta a la hora de subir contenido                                                                                                                                                                                                                                                                         | No aplica porque no subiremos contenido                                                                                                                                                                                                                                                                                              |
 | Transactions between Buyers and Suppliers | Transacciones entre compradores y proveedores | Este capítulo establece los términos y condiciones para las transacciones entre compradores y proveedores a través del sitio web.                                                                                                                                                                                                        | No nos aplica.                                                                                                                                                                                                                                                                                                                       |
 | Privacy                                   | Privacidad                                    | Describe la política de privacidad del sitio web y cómo se recopila, utiliza y protege la información personal del usuario. Alerta sobre el uso de cookies, en donde se almacenarán los datos y explicita que no se venderá información personal a terceros sin consentimiento previo.                                                   | Estamos de acuerdo con que almacenen en EEUU la información sobre nuestra navegación en sus cookies.                                                                                                                                                                                                                                 |
 | Limitation of Liability                   | Limitación de responsabilidad                 | Este capítulo establece las limitaciones de responsabilidad del sitio web y sus propietarios en caso de daños o perjuicios causados al usuario. Básicamente no se hacen responsables por la exactitude de los datos, que deben ser usados para tomar decisiones de negocio o personales bajo la total responsabilidad de cada usuario/a. | Incluiremos una clausula de limitación de responsabilidad en nuestro dataset de Zenodo.                                                                                                                                                                                                                                              |
@@ -209,7 +209,7 @@ El acuerdo de revisión de precios marcará una periodicidad de actualización y
 Cada materia prima tiene un precio marcado en un momento dado para un mercado geográfico y moneda determinada.
 
 ### El valor de negocio de contar con la información actualizada
-Al pagador del recargo le va a interesar estar constantemente pendiente de la evolución del precio de la materia prima para reclamar una reducción a su proveedor cuando este baja.
+Al pagador del recargo le va a interesar estar constantemente pendiente de la evolución del precio de la materia prima para reclamar una reducción a su proveedor cuando éste baja.
 
 Como aplicador del recargo, la empresa también debe estar alerta para subir el precio sin demora.
 
@@ -255,7 +255,7 @@ web scraping. En concreto, busca la tabla que contiene los datos de la commodity
 
 El sitemap.xml no estaba actualizado, así que creamos una segunda función que descubre las páginas enlazadas en el site.
 
-Algunas páginas no contenían la tabla de información, así que se habilitó la gestión de errores para capturar ese fallo en el fichero de log  y que el código continúe su ejecución.
+Algunas páginas no contenían la tabla de información, así que se habilitó la gestión de errores para capturar ese fallo en el fichero de log y que el código continúe su ejecución.
 
 ### Estructura logs
 En la carpeta ../logs/ se guarda un fichero log para cada día. Multiples ejecuciones en un mismo día añaden líneas al fichero ya existente.
@@ -274,13 +274,13 @@ como aquellas en las que se ha producido algún error
 | Mecanismos que permitan ejecutar un uso apropiado del web scraping | Parada de un tiempo aleatorio entre 1 y 3 segundos entre cada página a procesar<br/>![img_8.png](img_8.png)                                                                               |
 | User-Agent                                                         | ![img_7.png](img_7.png)                                                                                                                                                                   |
 | APIs                                                               | No se utilizan                                                                                                                                                                            |
-| Modularidad                                                        | Fichero main. Dos ficheros .py adicionals con 2 y 1 funciones.                                                                                                                            |
+| Modularidad                                                        | Fichero main. Dos ficheros .py adicionales con 2 y 1 funciones.                                                                                                                           |
 
 ### Consideraciones página web 
 | Indicación     | Aplicación |
-|----------------|----------|
-| Idioma         | Inglés   |
-| [x] Sitio real |          |
+|----------------|------------|
+| Idioma         | Inglés     |
+| [x] Sitio real |            |
 
 ## Dataset
 Se puede consultar el dataset en Zenodo con el siguiente DOI: [https://doi.org/10.5281/zenodo.7856321](https://doi.org/10.5281/zenodo.7856321)
@@ -302,9 +302,9 @@ Inserta aquí el enlace al vídeo de presentación de la práctica.
 ## Tabla de firmas
 Ambos hemos contribuido en cada uno de los apartados.
 
-| Contribuciones | Firma Martínez | Firma Lima |
-|------|----------------|------------|
-| Investigación previa     | mmr              | mlm        |
-| Redacción de las respuestas     | mmr               | mlm        |
-| Desarrollo del código      | mmr               | mlm        |
-| Participación en el vídeo     | mmr               | mlm        |
+| Contribuciones              | Firma Martínez | Firma Lima |
+|-----------------------------|----------------|------------|
+| Investigación previa        | mmr            | mlm        |
+| Redacción de las respuestas | mmr            | mlm        |
+| Desarrollo del código       | mmr            | mlm        |
+| Participación en el vídeo   | mmr            | mlm        |

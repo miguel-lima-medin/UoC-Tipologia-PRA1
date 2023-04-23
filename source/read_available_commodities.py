@@ -6,6 +6,7 @@ headers = {
                   'Chrome/89.0.4389.82 Safari/537.36 OPR/75.0.3969.14'
 }
 
+
 def read_commodities_from_sitemap():
     # Descargar sitemap.xml
     sitemap_url = "https://www.indexmundi.com/sitemap.xml"
@@ -24,8 +25,8 @@ def read_commodities_from_sitemap():
 
     return commodities
 
-def read_commodities_from_menu():
 
+def read_commodities_from_menu():
     url = "https://www.indexmundi.com/commodities/?"
 
     page = requests.get(url, headers=headers)

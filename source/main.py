@@ -12,13 +12,19 @@ from read_available_commodities import read_commodities_from_sitemap, read_commo
 
 # Definimos los parámetros que se pueden usar para llamar a main.py
 parser = argparse.ArgumentParser()
-parser.add_argument('--commodities_text_file', type=str, help='Name of the file containing the commodities list to process. Optional parameter. If not provided, then commodities_list.txt will be taken.')
-parser.add_argument('--download_from_sitemap', action='store_true', help='If true, then commodities_list is ignored and the sitemap.xml will be explored for all commodities available as of now on the site.')
-parser.add_argument('--download_from_menu', action='store_true', help='If true, then commodities_list is ignored and the left menu of the webpage is explored with BeautifulSoup to identify the commodities.')
+parser.add_argument('--commodities_text_file', type=str,
+                    help='Name of the file containing the commodities list to process. Optional parameter. If not '
+                         'provided, then commodities_list.txt will be taken.')
+parser.add_argument('--download_from_sitemap', action='store_true',
+                    help='If true, then commodities_list is ignored and the sitemap.xml will be explored for all '
+                         'commodities available as of now on the site.')
+parser.add_argument('--download_from_menu', action='store_true', help='If true, then commodities_list is ignored and '
+                                                                      'the left menu of the webpage is explored with '
+                                                                      'BeautifulSoup to identify the commodities.')
 parser.add_argument('-v', '--verbose', action='store_true', help='Enable verbose output')
 args = parser.parse_args()
 
-#Dependiendo de los parámetros usados, generamos una lista de commodities a procesar
+# Dependiendo de los parámetros usados, generamos una lista de commodities a procesar
 if args.download_from_sitemap:
     commodities_to_process = read_commodities_from_sitemap()
 elif args.download_from_menu:
@@ -33,7 +39,7 @@ else:
         print(f"The specified file '{commodities_list_file}' does not exist.")
         exit(1)
 
-    #Leemos las commodities del fichero
+    # Leemos las commodities del fichero
     with open(commodities_list_file, 'r') as f:
         commodities_to_process = [line.strip() for line in f]
 

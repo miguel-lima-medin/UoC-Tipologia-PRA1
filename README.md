@@ -1,10 +1,10 @@
-# UoC-Tipologia-PRA1
+# UoC-Tipología-PRA1
 Tipología y ciclo de vida de los datos aula 1
 Semestre Febrero 2023
 
-Práctica 1: ¿Cómo podemos capturar los datos de la web? de M2.851
+Práctica 1: ¿Cómo podemos capturar los datos de la web?
 
-Miguel Martínez Ruíz y Miguel Lima Medín
+Miguel Martínez Ruiz y Miguel Lima Medín
 
 ## Librerías a instalar
 beautifulsoup4==4.12.2  
