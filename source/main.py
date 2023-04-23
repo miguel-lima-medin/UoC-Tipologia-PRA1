@@ -56,10 +56,6 @@ for commodity in commodities_to_process:
 
     try:
         df = scrape_data(base_url + commodity, verbose=args.verbose)
-
-        # TODO: probar a generar un Excel con varios tabs.
-        # [see issue #4](https://github.com/miguel-lima-medin/UoC-Tipologia-PRA1/issues/4)
-        # df.to_excel('Commodities_' + date_today_str + '.xlsx', sheet_name=commodity)
         directory = "..//dataset/" + date_today_str + "/"
 
         if not os.path.exists(directory):

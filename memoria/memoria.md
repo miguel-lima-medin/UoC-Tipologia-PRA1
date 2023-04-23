@@ -68,6 +68,22 @@ D) También se pueden pedir todas las commodities que el web scrapper encuentre 
 
 ### Diagrama de flujo del proceso
 
+@startuml
+start
+switch (Selección de commodity)
+case()
+  :Lectura fichero;
+case() 
+  :Lectura sitemap;
+case()
+  :Lectura menú;
+endswitch
+:Lista commodities a procesar;
+:Procesar commodities;
+:Dataset, Logs;
+end
+@enduml
+
 ### Captura de pantalla de la web
 
 ![img_6.png](img_6.png)
