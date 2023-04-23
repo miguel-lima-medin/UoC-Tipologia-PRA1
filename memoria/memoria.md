@@ -12,7 +12,7 @@ lang: es-ES
 ### Aula 1
 ### Miguel Martínez Ruíz y Miguel Lima Medín
 
-***
+<div style="page-break-after: always;"></div>
 
 # Índice de Contenidos
 
@@ -28,44 +28,13 @@ lang: es-ES
 - [Dataset](#dataset)
 - [Vídeo](#vídeo)
 
-****
+<div style="page-break-after: always;"></div>
 
 ## Contexto
-### Recargos de metales 
-En la industria de la fundición de metales es común aplicar recargos de metal (metal surcharge). Su propósito es desvincular la fluctuación del precio de mercado de una materia prima del precio negociado. La parte compradora y vendedora acordarían un precio base y la aplicación de un recargo vinculado al precio de mercado de la materia prima subyacente.
-
-Hay dos lados en cada recargo: el aplicador del recargo y el pagador del recargo. Una empresa puede ser pagadora de recargos en los componentes que compra a sus proveedores, y a su vez aplicadora de recargos a sus clientes al vender el producto terminado elaborado a partir de esos componentes.
-
-El acuerdo de revisión de precios marcará una periodicidad de actualización y una fórmula de cálculo. Puede que se acuerde aplicar la actualización de precio solamente tras superar una determinada variación porcentual del precio de partida.
-
-Cada materia prima tiene un precio marcado en un momento dado para un mercado geográfico y moneda determinada.
-
-### El valor de negocio de contar con la información actualizada
-Al pagador del recargo le va a interesar estar constantemente pendiente de la evolución del precio de la materia prima para reclamar una reducción a su proveedor cuando este baja.
-
-Como aplicador del recargo, la empresa también debe estar alerta para subir el precio sin demora.
-
-Incluso en los casos en los que no se cuenta con un acuerdo de revisión de precios, interesa revisar periódicamente la evolución del mercado para poder renegociar el precio inicial si las materias primas subyacentes han sufrido una variación significativa.
-
-Por tanto, cualquier retraso en el procesamiento de esta información puede resultar en un precio subóptimo y la perdida de dinero.
-
-### El coste de acceder periódicamente a la información
-Estos serían los pasos típicos para acceder a la información de precios manualmente:
-1) Abrir la página web
-2) Navegar hasta el metal que se desea consultar
-3) Escoger las fechas, y la moneda aplicable
-4) Consultar el precio
-5) Repetir pasos 2 a 4 para cada metal
-
-Con el web scrapper diseñado se automatizarían todos estos pasos grabando la información en un fichero .csv
+Decidimos trabajar sobre la información de precios de commodities, más concretamente los metales básicos, en el contexto de la industria de la automoción. Se desarrolla el caso de negocio en más detalle en el capítulo _Inspiración_ de esta memoria.
 
 ### Página web seleccionada
 Se selecciona [Index Mundi](https://www.indexmundi.com) por contener la información que se necesita.
-
-#### Robots.txt
-Se comprueba en su fichero [robots.txt](https://www.indexmundi.com/robots.txt) que en general se permiten los web scrappers, con la salvedad de una serie de robots específicados en su lista negra. Respetaremos la limitación indicada, no accediendo al área /api/v2.
-
-![img_1.png](img_1.png)
 
 ### Sitemap.xml
 Verificamos el fichero [Sitemap.xml](https://www.indexmundi.com/sitemap.xml)
@@ -106,6 +75,8 @@ El formato es el de un texto plano separado por comas:
 
 ![img_5.png](img_5.png)
 
+<div style="page-break-after: always;"></div>
+
 ## Representación Gráfica
 
 ![img_6.png](img_6.png)
@@ -129,8 +100,10 @@ respecto al mes anterior.
 
 ## Propietario
 
+### Presentación del propietario
 [IndexMundi](https://www.indexmundi.com/about.html) es un portal de datos que recopila hechos y estadísticas de múltiples fuentes.
 
+### Investigación de análisis anteriores
 Buscamos en Zenodo contenido sobre precios de metales. Restringimos la busqueda a nuestro dominio:
 
 ![img_12.png](img_12.png)
@@ -144,10 +117,77 @@ Buscando datasets abiertos de "_commodities prices_" resultan 275 entradas. Revi
 | [Evolució del preu de les matèries primeres](https://zenodo.org/record/7336214#.ZEQxas5ByUk) | Toma tambien los datos de IndexMundi<br/>Contiene información sobre todo tipo de materias primas, pero no está actualizado<br/>En nuestro caso no necesitamos extraer algunos de los campos que se escogieron en este análisis previo. |
 | [Practica 1 Web Scraping Oil Price Data](https://zenodo.org/record/5655519#.ZEQxd85ByUk)     | Solo incluye el precio de petroleo                                                                                                                                                                                                     |
 
+### Principios éticos y legales
+Listamos una serie de principios que se deben considerar antes de proceder con web scrapping, y como los hemos tenido en cuenta en nuestro ejercicio.
+
+#### Obtener permiso y respetar indicaciones del propietario
+Se comprueba en su fichero [robots.txt](https://www.indexmundi.com/robots.txt) que en general se permiten los web scrappers, con la salvedad de una serie de robots específicados en su lista negra. Respetaremos la limitación indicada, no accediendo al área /api/v2.
+
+![img_1.png](img_1.png)
+
+#### Respeto de los derechos de autoría
+El sitio web [indexmundi.com](https://www.indexmundi.com/) es el único propietario de todos los derechos sobre el sitio y su contenido, incluyendo las marcas registradas y los derechos de propiedad intelectual. Por lo tanto, cualquier uso no autorizado de su contenido podría constituir una violación de los derechos de propiedad intelectual y estar sujeto a sanciones legales. 
+
+En este caso particular, dado que el dataset generado es para uso privado y no se va a comercializar, se podría argumentar que se está respetando el derecho de autor.
+
+Al no contar con su consentimiento explicito, y no ser necesario para nuestro ejercicio, hemos evitado la reproducción o uso de sus logotipos y marcas registradas.
+
+![img_13.png](img_13.png)
+
+#### No infringir los términos de servicio
+Se consultan los términos en [https://www.indexmundi.com/help/terms/](https://www.indexmundi.com/help/terms/).
+
+| Capítulo                                  | Título en castellano | Resumen consideraciones del capítulo                                                                                                                                                                                                                                                                                                     | Aplicación en nuestro ejercicio                                                                                                                                                                                                                                                                                                      |
+|-------------------------------------------| --- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Scope of the Agreement                    | Ámbito del acuerdo | Este capítulo indica el alcance del acuerdo de uso, que se aplica a todo usuario que acceda al sitio y debe ser asumido antes de empezar a usar el site.                                                                                                                                                                                 | Asumimos las condiciones, que se ven en detalle en cada capítulo posterior.                                                                                                                                                                                                                                                          |
+| User guidelines | Pautas del usuario/a | Indica pautas de uso como:<br/>- No violar leyes o acuerdos con terceros<br/>- Ser mayor de 18 años<br/>- Pautas específicas para usuarios registrados: no compartir clave, no publicar información falsa, no publicar información en áreas incorrectas, etc.<br/>- No spam ni virus<br/>- Recoger información de usuarios/as            | Cumplimos todas las pautas en nuestro ejercicio.                                                                                                                                                                                                                                                                                     |
+| Registered Users                          | Usuarios registrados | Este capítulo se aplica a aquellos usuarios que se han registrado en el sitio web. Contiene información sobre la veracidad de la información proporcionada por el usuario registrado, la privacidad de los datos y las responsabilidades del usuario.                                                                                    | No nos aplica, porque no somos una empresa registrada como usuario del site que vaya a subir datos. Solo vamos a descargar datos accesibles públicamente a usuarios no registrados.                                                                                                                                                  |
+| Posting information on the site | Publicando información en el sitio | Enumera 13 normas a tener en cuenta a la hora de subir contenido                                                                                                                                                                                                                                                                         | No aplica porque no subiremos contenido                                                                                                                                                                                                                                                                                              |
+| Transactions between Buyers and Suppliers | Transacciones entre compradores y proveedores | Este capítulo establece los términos y condiciones para las transacciones entre compradores y proveedores a través del sitio web.                                                                                                                                                                                                        | No nos aplica.                                                                                                                                                                                                                                                                                                                       |
+| Privacy                                   | Privacidad | Describe la política de privacidad del sitio web y cómo se recopila, utiliza y protege la información personal del usuario. Alerta sobre el uso de cookies, en donde se almacenarán los datos y explicita que no se venderá información personal a terceros sin consentimiento previo.                                                   | Estamos de acuerdo con que almacenen en EEUU la información sobre nuestra navegación en sus cookies.                                                                                                                                                                                                                                 |
+| Limitation of Liability                   | Limitación de responsabilidad | Este capítulo establece las limitaciones de responsabilidad del sitio web y sus propietarios en caso de daños o perjuicios causados al usuario. Básicamente no se hacen responsables por la exactitude de los datos, que deben ser usados para tomar decisiones de negocio o personales bajo la total responsabilidad de cada usuario/a. | Incluiremos una clausula de limitación de responsabilidad en nuestro dataset de Zenodo.                                                                                                                                                                                                                                              |
+| Indemnity                                 | Indemnización | Establece la obligación del usuario de indemnizar al sitio web y sus propietarios en caso de que se produzcan daños o perjuicios como resultado del uso del sitio web. Es importante ser cuidadoso con el web scrapper de forma a evitar perjuicios en el propietario que puedan derivar en un proceso judicial.                         | La cantidad de datos a descargar es mínima y se incluye un retraso con cada página, así que no esperamos ningún impacto en el rendimiento de la página. Ejecutaremos el código siempre en primer plano, nunca en un trabajo desatendido, para poder cancelarlo en caso de ver que causa algún problema o entra en un ciclo infinito. |
+| Notices                                   | Notificaciones | Describe cómo se realizan las notificaciones y comunicaciones entre el usuario y el sitio web.                                                                                                                                                                                                                                           | No aplica, no somos un usuario registrado.                                                                                                                                                                                                                                                                                           |
+| General                                   | General | Este capítulo contiene disposiciones generales y cláusulas de cierre del acuerdo, como el derecho de IndexMundi a modificar las condiciones en un futuro sin previo aviso.                                                                                                                                                               | No debemos asumir que las condiciones son estáticas, y si en un futuro se vuelve a usar el web scrapper debemos validar periódicamente si ha habido actualizaciones en los términos de uso.                                                                                                                                          |
+
+#### No sobrecargar ni dañar el sitio web
+Tal como se ha explicado en otras partes de esta memoria la cantidad de datos a descargar es mínima y se incluye un retraso con cada página.
+
+#### No divulgar información personal
+No existe información personal en este dataset.
+
+#### No comercializar los datos sin autorización
+No se comercializará la información.
 
 ## Inspiración
 
-Inserta aquí la información de la inspiración.
+### Recargos de metales 
+En la industria de la fundición de metales es común aplicar recargos de metal (metal surcharge). Su propósito es desvincular la fluctuación del precio de mercado de una materia prima del precio negociado. La parte compradora y vendedora acordarían un precio base y la aplicación de un recargo vinculado al precio de mercado de la materia prima subyacente.
+
+Hay dos lados en cada recargo: el aplicador del recargo y el pagador del recargo. Una empresa puede ser pagadora de recargos en los componentes que compra a sus proveedores, y a su vez aplicadora de recargos a sus clientes al vender el producto terminado elaborado a partir de esos componentes.
+
+El acuerdo de revisión de precios marcará una periodicidad de actualización y una fórmula de cálculo. Puede que se acuerde aplicar la actualización de precio solamente tras superar una determinada variación porcentual del precio de partida.
+
+Cada materia prima tiene un precio marcado en un momento dado para un mercado geográfico y moneda determinada.
+
+### El valor de negocio de contar con la información actualizada
+Al pagador del recargo le va a interesar estar constantemente pendiente de la evolución del precio de la materia prima para reclamar una reducción a su proveedor cuando este baja.
+
+Como aplicador del recargo, la empresa también debe estar alerta para subir el precio sin demora.
+
+Incluso en los casos en los que no se cuenta con un acuerdo de revisión de precios, interesa revisar periódicamente la evolución del mercado para poder renegociar el precio inicial si las materias primas subyacentes han sufrido una variación significativa.
+
+Por tanto, cualquier retraso en el procesamiento de esta información puede resultar en un precio subóptimo y la perdida de dinero.
+
+### El coste de acceder periódicamente a la información
+Estos serían los pasos típicos para acceder a la información de precios manualmente:
+1) Abrir la página web
+2) Navegar hasta el metal que se desea consultar
+3) Escoger las fechas, y la moneda aplicable
+4) Consultar el precio
+5) Repetir pasos 2 a 4 para cada metal
+
+Con el web scrapper diseñado se automatizarían todos estos pasos grabando la información en un fichero .csv
 
 ## Licencia
 
